@@ -29,7 +29,6 @@ def gen_table(data):
             FORMAT_STR = " {{:<{}}} |" .format(columnSizes[col])
             str += FORMAT_STR.format(cell)
         str += "\n"
-    str += "\n"
 
 
     return str
