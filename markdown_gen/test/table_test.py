@@ -4,7 +4,7 @@ import unittest
 
 import markdown_gen.MardownGen as md
 
-class TestTableGenerator(unittest.TestCase):
+class TableTest(unittest.TestCase):
 
     def setUp(self):
         self.data = [

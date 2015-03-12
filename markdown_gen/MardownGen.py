@@ -58,6 +58,14 @@ def gen_link(url, text="", alternativeText=""):
     else:
         return '[{}]({} "{}")\n'.format(text, url, alternativeText)
 
+def gen_reference(reference_id, reference_text, text="", references_list = []):
+    if text is "":
+        str = " [{}]\n".format(reference_id)
+    else:
+        str = "[{}][{}]\n".format(text, reference_id)
+    ref = "[{}]: {}\n".format(reference_id, reference_text)
+    references_list.append(ref)
+    return str, references_list
 
 def main():
     data = [

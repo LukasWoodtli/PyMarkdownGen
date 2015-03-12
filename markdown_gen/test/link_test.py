@@ -4,7 +4,7 @@ import unittest
 import markdown_gen.MardownGen as md
 
 
-class MyTestCase(unittest.TestCase):
+class LinkTests(unittest.TestCase):
     def test_link(self):
         expected = "www.example.com\n"
         self.assertEqual(expected, md.gen_link("www.example.com"))

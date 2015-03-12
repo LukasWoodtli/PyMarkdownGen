@@ -4,7 +4,7 @@ import unittest
 
 import markdown_gen.MardownGen as md
 
-class TestHeadingGenerator(unittest.TestCase):
+class HeadingTests(unittest.TestCase):
 
 
     def test_heading_1(self):
