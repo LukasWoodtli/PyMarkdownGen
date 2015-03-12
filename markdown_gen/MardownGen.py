@@ -34,7 +34,20 @@ def gen_table(data):
     return str
 
 
-
+def gen_heading(headingText, depth = 1, alternative = False):
+    if alternative and depth == 1:
+        str = headingText + "\n"
+        str += "=" * len(headingText)
+        return str + "\n"
+    if alternative and depth is 2:
+        str = headingText + "\n"
+        str += "-" * len(headingText)
+        return str + "\n"
+    else:
+        str = "#" * depth
+        str += " "
+        str += headingText
+        return str + "\n"
 
 
 def main():
