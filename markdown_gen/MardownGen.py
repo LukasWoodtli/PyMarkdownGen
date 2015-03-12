@@ -50,6 +50,15 @@ def gen_heading(headingText, depth = 1, alternative = False):
         return str + "\n"
 
 
+def gen_link(url, text="", alternativeText=""):
+    if text is "" and alternativeText is "":
+        return url + "\n"
+    elif alternativeText is "":
+        return '[{}]({})\n'.format(text, url)
+    else:
+        return '[{}]({} "{}")\n'.format(text, url, alternativeText)
+
+
 def main():
     data = [
         ["abcdefghij", "aaa", "b"],
