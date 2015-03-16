@@ -67,6 +67,25 @@ def gen_reference(reference_id, reference_text, text="", references_list = []):
     references_list.append(ref)
     return str, references_list
 
+
+def gen_italic(text, alternative=False):
+    if alternative:
+        return "_" + text + "_"
+    else:
+        return "*" + text + "*"
+
+def gen_bold(text, alternative=False):
+    if alternative:
+        return "__" + text + "__"
+    else:
+        return "**" + text + "**"
+
+def gen_monospace(text):
+    return "`" + text + "`"
+
+def gen_strikethrough(text):
+    return "~~" + text + "~~"
+
 def main():
     data = [
         ["abcdefghij", "aaa", "b"],
