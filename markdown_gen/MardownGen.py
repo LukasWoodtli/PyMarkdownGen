@@ -71,6 +71,13 @@ def gen_reference(reference_id, reference_text, text="", references_list = None)
         references_list = []
     references_list.append(ref)
     return str, references_list
+    
+def gen_new_line():
+	return "  \n"
+
+def gen_section():
+	return "\n\n"
+
 
 
 def gen_italic(text, alternative=False):
