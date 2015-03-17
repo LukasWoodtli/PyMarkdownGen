@@ -24,8 +24,8 @@ class AttributesTests(unittest.TestCase):
         
     def test_bold_and_italic(self):
         expected = "***bold and italic text***"
-        self.assertEqual(expected, md.gen_italic(md.gen_bold("bold text")))
-        self.assertEqual(expected, md.gen_bold(md.gen_italic("bold text")))
+        self.assertEqual(expected, md.gen_italic(md.gen_bold("bold and italic text")))
+        self.assertEqual(expected, md.gen_bold(md.gen_italic("bold and italic text")))
 
         expected = "__bold text alternative__"
         self.assertEqual(expected, md.gen_bold("bold text alternative", True))
