@@ -58,12 +58,17 @@ def gen_link(url, text="", alternativeText=""):
     else:
         return '[{}]({} "{}")\n'.format(text, url, alternativeText)
 
-def gen_reference(reference_id, reference_text, text="", references_list = []):
+def gen_image_link(url, title, alt_text):
+    return '![{}]({} "{}")'.format(alt_text, url, title)
+
+def gen_reference(reference_id, reference_text, text="", references_list = None):
     if text is "":
         str = " [{}]\n".format(reference_id)
     else:
         str = "[{}][{}]\n".format(text, reference_id)
     ref = "[{}]: {}\n".format(reference_id, reference_text)
+    if not references_list:
+        references_list = []
     references_list.append(ref)
     return str, references_list
 
