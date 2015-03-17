@@ -1,4 +1,4 @@
-
+# coding=utf-8
 
 import unittest
 
@@ -15,13 +15,15 @@ class TableTest(unittest.TestCase):
 
     def test_table_gen(self):
         expected = \
-"""| abcdefghij | aaa | b |
+"""\
+| abcdefghij | aaa | b |
 |------------|-----|---|
 | b          | c   | b |
 | dddddddddd | a   | c |
 """
-
         self.assertEqual(expected, md.gen_table(self.data))
+
+
 
 
 if __name__ == '__main__':

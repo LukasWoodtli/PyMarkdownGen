@@ -25,16 +25,15 @@ Some text to show that the reference links can follow later.
         refs = []
         actual = ""
         txt, refs = md.gen_reference("arbitrary reference text", "https://www.mozilla.org", "I'm a reference-style link", refs)
-        actual += txt + "\n"
+        actual += txt + md.gen_section()
         txt, refs = md.gen_reference("1", "http://slashdot.org", "You can use numbers for reference-style link definitions", refs)
-        actual += txt + "\n"
+        actual += txt + md.gen_section()
 
         actual += "Or leave it empty and use the"
         txt, refs = md.gen_reference("link text itself" ,"http://www.reddit.com", references_list=refs);
-        actual += txt + "\n"
-        actual += "Some text to show that the reference links can follow later.\n"
+        actual += txt + md.gen_section()
+        actual += "Some text to show that the reference links can follow later." + md.gen_section()
 
-        actual += "\n"
         for reference in refs:
             actual += reference
         self.assertEqual(expected, actual)

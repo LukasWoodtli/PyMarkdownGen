@@ -12,7 +12,7 @@ def gen_table(data):
     # headers
     str = "|"
     for col, cell in enumerate(data[0]):
-        FORMAT_STR = " {{:<{}}} |" .format(columnSizes[col])
+        FORMAT_STR = " {{:<{}}} |".format(columnSizes[col])
         str += FORMAT_STR.format(cell)
     str += "\n"
 
@@ -26,7 +26,7 @@ def gen_table(data):
     for row in data[1:]:
         str += "|"
         for col, cell in enumerate(row):
-            FORMAT_STR = " {{:<{}}} |" .format(columnSizes[col])
+            FORMAT_STR = " {{:<{}}} |".format(columnSizes[col])
             str += FORMAT_STR.format(cell)
         str += "\n"
 
@@ -52,20 +52,20 @@ def gen_heading(headingText, depth = 1, alternative = False):
 
 def gen_link(url, text="", alternativeText=""):
     if text is "" and alternativeText is "":
-        return url + "\n"
+        return url
     elif alternativeText is "":
-        return '[{}]({})\n'.format(text, url)
+        return '[{}]({})'.format(text, url)
     else:
-        return '[{}]({} "{}")\n'.format(text, url, alternativeText)
+        return '[{}]({} "{}")'.format(text, url, alternativeText)
 
 def gen_image_link(url, title, alt_text):
     return '![{}]({} "{}")'.format(alt_text, url, title)
 
 def gen_reference(reference_id, reference_text, text="", references_list = None):
     if text is "":
-        str = " [{}]\n".format(reference_id)
+        str = " [{}]".format(reference_id)
     else:
-        str = "[{}][{}]\n".format(text, reference_id)
+        str = "[{}][{}]".format(text, reference_id)
     ref = "[{}]: {}\n".format(reference_id, reference_text)
     if not references_list:
         references_list = []
@@ -73,10 +73,10 @@ def gen_reference(reference_id, reference_text, text="", references_list = None)
     return str, references_list
     
 def gen_new_line():
-	return "  \n"
+    return "  \n"
 
 def gen_section():
-	return "\n\n"
+    return "\n\n"
 
 
 
@@ -98,15 +98,3 @@ def gen_monospace(text):
 def gen_strikethrough(text):
     return "~~" + text + "~~"
 
-def main():
-    data = [
-        ["abcdefghij", "aaa", "b"],
-        ["b", "c", "b"],
-        ["dddddddddd", "a", "c"]
-    ]
-
-    print gen_table(data)
-
-
-if __name__ == "__main__":
-    main()
