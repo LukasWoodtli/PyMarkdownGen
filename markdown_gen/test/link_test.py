@@ -17,5 +17,9 @@ class LinkTests(unittest.TestCase):
         expected = '[This is a link.](www.example.com "Alternative text")\n'
         self.assertEqual(expected, md.gen_link("www.example.com", "This is a link.", "Alternative text"))
 
+    def test_image_link(self):
+        expected = '![alt text](http://example.com/example.jpg "Text")'
+        self.assertEqual(expected, md.gen_image_link("http://example.com/example.jpg", "Text", "alt text"))
+
 if __name__ == '__main__':
     unittest.main()

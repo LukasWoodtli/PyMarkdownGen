@@ -27,8 +27,9 @@ class AttributesTests(unittest.TestCase):
         self.assertEqual(expected, md.gen_italic(md.gen_bold("bold and italic text")))
         self.assertEqual(expected, md.gen_bold(md.gen_italic("bold and italic text")))
 
-        expected = "__bold text alternative__"
-        self.assertEqual(expected, md.gen_bold("bold text alternative", True))
+        expected =  "**asterisks and _underscores_**"
+
+        self.assertEqual(expected, md.gen_bold("asterisks and " + md.gen_italic("underscores", True)))
 
     def test_monspace(self):
         expected = "`monospace`"
@@ -37,6 +38,9 @@ class AttributesTests(unittest.TestCase):
     def test_strikethrough(self):
         expected = "~~strikethrough~~"
         self.assertEqual(expected, md.gen_strikethrough("strikethrough"))
+
+
+
 
 
 if __name__ == '__main__':
