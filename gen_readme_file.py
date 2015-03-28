@@ -37,7 +37,8 @@ features = [
     ["References",      "✓",                "✓"],
     ["Images",          "✓",                "✓"],
     ["Tables",          "✓ (partially)",    "✓"],
-    ["Lists",           "✗",                "✗"],
+    ["Lists",           "✓",                "✓"],
+    ["Nested Lists",    "✗",                "✗"],
     ["Blockquotes",     "✗",                "✗"],
     ["Emphasis",        "✓",                "✓"],
     ["Code and Syntax", "✗",                "✗"]

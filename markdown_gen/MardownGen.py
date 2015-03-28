@@ -98,3 +98,16 @@ def gen_monospace(text):
 def gen_strikethrough(text):
     return "~~" + text + "~~"
 
+def gen_ordered_list(list_items):
+    # if isinstance(a, collections.Iterable):
+    str = ""
+    for i, text in enumerate(list_items):
+        str += "{}. {}\n".format(i+1, text)
+
+    return str
+
+def gen_un_ordered_list(list_items, bullet_char = "*"):
+    str = ""
+    for item in list_items:
+        str += "{} {}\n".format(bullet_char, item)
+    return str
