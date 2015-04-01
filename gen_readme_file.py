@@ -39,10 +39,12 @@ features = [
     ["Tables",          "✓ (partially)",    "✓"],
     ["Lists",           "✓",                "✓"],
     ["Nested Lists",    "✗",                "✗"],
-    ["Blockquotes",     "✗",                "✗"],
+    ["Blockquotes",     "✓",                "✓"],
     ["Emphasis",        "✓",                "✓"],
     ["Code and Syntax", "✗",                "✗"]
 ]
+
+
 str += mdg.gen_table(features)
 
 

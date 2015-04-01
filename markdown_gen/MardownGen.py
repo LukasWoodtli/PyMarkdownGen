@@ -111,3 +111,13 @@ def gen_un_ordered_list(list_items, bullet_char = "*"):
     for item in list_items:
         str += "{} {}\n".format(bullet_char, item)
     return str
+
+def gen_block_quote(text, simple=False):
+    if simple:
+        return "> " + text + "\n"
+    else:
+        text = text.splitlines()
+        str = ""
+        for line in text:
+            str += "> " + line + "\n"
+        return str
