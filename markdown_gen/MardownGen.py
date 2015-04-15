@@ -1,6 +1,16 @@
-__author__ = 'Boot'
+# -*- coding: utf-8 -*-
+"""Procedural API for generating Markdown.
+
+This module provides Python functions for generating `Markdown`_ text.
+
+.. _Markdown:
+    http://daringfireball.net/projects/markdown/
+
+"""
+__author__ = 'Lukas Woodtli'
 
 from collections import defaultdict
+
 
 def gen_table(data):
     # calculate max size of each column
