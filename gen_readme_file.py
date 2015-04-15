@@ -13,6 +13,10 @@ str = ""
 
 str += mdg.gen_heading("Markdown Generator for Python", 1, True)
 
+str += mdg.gen_heading("Status", 2, True)
+
+str += mdg.gen_image_link("https://travis-ci.org/LukasWoodtli/MarkdownGen.svg?branch=master", "Build Status", "Travis CI Build Status")
+
 str += mdg.gen_heading("Objective", 2, True)
 
 str += "This is a small Python library that helps generating " + \
