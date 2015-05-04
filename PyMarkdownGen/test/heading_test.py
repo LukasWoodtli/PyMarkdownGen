@@ -2,7 +2,7 @@
 
 import unittest
 
-import markdown_gen.PyMardownGen as md
+import PyMarkdownGen.PyMardownGen as md
 
 class HeadingTests(unittest.TestCase):
 
