@@ -2,7 +2,7 @@
 __author__ = 'Boot'
 
 import os
-import markdown_gen.MardownGen as mdg
+import markdown_gen.PyMardownGen as mdg
 from datetime import datetime as dt
 
 OUTPUT_FILE = os.path.realpath(__file__)

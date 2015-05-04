@@ -1,7 +1,7 @@
 
 import unittest
 
-import markdown_gen.MardownGen as md
+import markdown_gen.PyMardownGen as md
 
 class ReferencesTest(unittest.TestCase):
 
