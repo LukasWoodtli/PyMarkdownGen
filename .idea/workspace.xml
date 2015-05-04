@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3c0255f6-28c0-4603-8171-37165d005f9f" name="Default" comment="Add function to create image url">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/PyMardownGen.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/PyMardownGen.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_readme_file.py" afterPath="$PROJECT_DIR$/gen_readme_file.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/table_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/table_test.py" />
     </list>
     <ignored path="MarkdownGen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,13 +35,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66831684" vertical-offset="0" max-vertical-offset="765">
+            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="765">
               <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
               <folding />
             </state>
@@ -71,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PyMardownGen.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PyMardownGen.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PyMarkdownGen/PyMardownGen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="547" max-vertical-offset="2580">
-              <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.76566124" vertical-offset="255" max-vertical-offset="2775">
+              <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -136,10 +133,10 @@
         <option value="$PROJECT_DIR$/markdown_gen/test/lists_tests.py" />
         <option value="$PROJECT_DIR$/markdown_gen/test/block_code_test.py" />
         <option value="$PROJECT_DIR$/markdown_gen/MardownGen.py" />
-        <option value="$PROJECT_DIR$/PyMarkdownGen/PyMardownGen.py" />
         <option value="$PROJECT_DIR$/PyMarkdownGen/test/table_test.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/gen_readme_file.py" />
+        <option value="$PROJECT_DIR$/PyMarkdownGen/PyMardownGen.py" />
       </list>
     </option>
   </component>
@@ -201,6 +198,24 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PyMarkdownGen">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PyMarkdownGen">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="test">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="ProjectPane">
@@ -230,7 +245,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.gen_readme_file">
+  <component name="RunManager" selected="Python tests.Unittests in table_test (1)">
     <configuration default="false" name="Unittests in lists_tests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1120,14 +1135,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/PyMardownGen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="547" max-vertical-offset="2580">
-          <caret line="61" column="27" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/table_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="439" max-vertical-offset="900">
@@ -1157,8 +1164,16 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66831684" vertical-offset="0" max-vertical-offset="765">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="765">
           <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/PyMardownGen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76566124" vertical-offset="255" max-vertical-offset="2775">
+          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
           <folding />
         </state>
       </provider>

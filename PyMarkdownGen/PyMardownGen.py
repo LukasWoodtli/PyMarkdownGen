@@ -18,9 +18,22 @@ def gen_table(data, aligning=None):
     The format of the generated table is as described at: 
     https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables
     The function adds a new line to the end.
+
+    The first row of data is used as headers for the table.
     
     Args:
-      data 2d-list of strings.
+      data 2d-list of strings: The data to be represented as table.
+      aligning (list of strings): The aligning for each row. The entries have
+                                  following meaning:
+                                  '^' center
+                                  '<' left align
+                                  '>' right align
+                                  If no aligning list is provided, all columns
+                                  are left aligned. If the aligning list has
+                                  less entries than columns in data the last
+                                  columns are left aligned. If the provided
+                                  aligning list has more entries than columns
+                                  in data the unused are ignored.
       
     Returns:
       A markdown string containing the table.
