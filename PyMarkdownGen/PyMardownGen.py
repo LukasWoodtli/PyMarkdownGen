@@ -13,6 +13,19 @@ from collections import defaultdict
 
 
 def gen_table(data):
+    """Generates a table from a 2 dimentional list.
+    
+    The format of the generated table is as described at: 
+    https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables
+    The function adds a new line to the end.
+    
+    Args:
+      data 2d-list of strings.
+      
+    Returns:
+      A markdown string containing the table.
+      
+    """
     # calculate max size of each column
     columnSizes = defaultdict(int)
     for row in data:
