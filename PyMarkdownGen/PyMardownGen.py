@@ -12,7 +12,7 @@ __author__ = 'Lukas Woodtli'
 from collections import defaultdict
 
 
-def gen_table(data):
+def gen_table(data, aligning=None):
     """Generates a table from a 2 dimentional list.
     
     The format of the generated table is as described at: 
@@ -26,6 +26,16 @@ def gen_table(data):
       A markdown string containing the table.
       
     """
+    # no aligning: default is left
+    if not aligning:
+        aligning = ["<"] * len(data[0])
+
+    if len(data[0]) > len(aligning):
+        difference = len(data[0]) - len(aligning)
+        aligning.extend(["<"] * difference)
+
+    assert len(aligning) >= len(data[0])
+
     # calculate max size of each column
     columnSizes = defaultdict(int)
     for row in data:
@@ -35,21 +45,31 @@ def gen_table(data):
     # headers
     str = "|"
     for col, cell in enumerate(data[0]):
-        FORMAT_STR = " {{:<{}}} |".format(columnSizes[col])
+        FORMAT_STR = " {{:" + aligning[col] + "{}}} |"
+        FORMAT_STR = FORMAT_STR.format(columnSizes[col])
         str += FORMAT_STR.format(cell)
     str += "\n"
 
     # headers separating line
     str += "|"
     for i in range(len(data[0])):
-        str += "-" * columnSizes[i] + "--|" # add 2 dashes for spacing around text
+        left_char = "-"
+        right_char = "-"
+        if aligning[i] == '>':
+            right_char = ":"
+        elif aligning[i] == '^':
+            left_char = ":"
+            right_char = ":"
+
+        str += left_char + "-" * columnSizes[i] + right_char + "|" # add 2 dashes for spacing around text
     str += "\n"
 
     # rest of table
     for row in data[1:]:
         str += "|"
         for col, cell in enumerate(row):
-            FORMAT_STR = " {{:<{}}} |".format(columnSizes[col])
+            FORMAT_STR = " {{:" + aligning[col] + "{}}} |"
+            FORMAT_STR = FORMAT_STR.format(columnSizes[col])
             str += FORMAT_STR.format(cell)
         str += "\n"
 

@@ -41,7 +41,7 @@ features = [
     ["Links",           "✓",                "✓"],
     ["References",      "✓",                "✓"],
     ["Images",          "✓",                "✓"],
-    ["Tables",          "✓ (partially)",    "✓"],
+    ["Tables",          "✓",                "✓"],
     ["Lists",           "✓",                "✓"],
     ["Nested Lists",    "✗",                "✗"],
     ["Blockquotes",     "✓",                "✓"],
@@ -49,8 +49,9 @@ features = [
     ["Code and Syntax", "✗",                "✗"]
 ]
 
+features_alignment = ["<", "^", "^"]
 
-str += mdg.gen_table(features)
+str += mdg.gen_table(features, features_alignment)
 
 
 str += mdg.gen_section()
