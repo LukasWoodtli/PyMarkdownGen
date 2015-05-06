@@ -7,5 +7,5 @@ install:
 
 script: 
  - python -m unittest discover . -p *test*.py
- - pylint PyMarkdownGen/ PyMarkdownGen.py
+ - pylint PyMarkdownGen/PyMarkdownGen.py
  

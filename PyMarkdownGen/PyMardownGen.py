@@ -72,7 +72,7 @@ def gen_table(data, aligning=None):
             left_char = ":"
             right_char = ":"
 
-        str += left_char + "-" * columnSizes[i] + right_char + "|" # add 2 dashes for spacing around text
+        str += left_char + "-" * columnSizes[i] + right_char + "|"
     str += "\n"
 
     # rest of table
@@ -88,7 +88,7 @@ def gen_table(data, aligning=None):
     return str
 
 
-def gen_heading(headingText, depth = 1, alternative = False):
+def gen_heading(headingText, depth=1, alternative=False):
     """Creates a Markdown heading.
     
     This function creates a heading of the given depth. There
@@ -157,7 +157,7 @@ def gen_image_link(url, title, alt_text):
 
 
 0
-def gen_reference(reference_id, reference_text, text="", references_list = None):
+def gen_reference(reference_id, reference_text, text="", references_list=None):
     if text is "":
         str = " [{}]".format(reference_id)
     else:
@@ -219,7 +219,7 @@ def gen_ordered_list(list_items):
 
     return str
 
-def gen_un_ordered_list(list_items, bullet_char = "*"):
+def gen_un_ordered_list(list_items, bullet_char="*"):
     str = ""
     for item in list_items:
         str += "{} {}\n".format(bullet_char, item)
