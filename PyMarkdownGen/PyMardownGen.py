@@ -127,9 +127,26 @@ def gen_reference(reference_id, reference_text, text="", references_list = None)
     return str, references_list
     
 def gen_new_line():
+    """Generate a new line.
+    
+    Markdown uses two spaces and a line break for creating a new line in
+    the output.
+    
+    Returns:
+      stringh The chars needed for a new line.
+      
+    """
     return "  \n"
 
 def gen_section():
+    """Create a new section.
+    
+    Markdown uses two line breaks to create a new section.
+    
+    Returns:
+      string: The string with the characters for a new section.
+      
+    """
     return "\n\n"
 
 
