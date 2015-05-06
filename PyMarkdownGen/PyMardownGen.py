@@ -126,12 +126,13 @@ def gen_link(url, text="", alternativeText=""):
     Args:
       url string: The URL for the link.
       text string: The text to display instead of the URL.
-      alternativeText: The alternative text (usually displayed as tool tip).
+      alternativeText string: The alternative text (usually 
+        displayed as tool tip).
       
     Returns:
-      The URL formatted as Markdown link.
+      string: The URL formatted as Markdown link.
       
-    """   
+    """  
     if text is "" and alternativeText is "":
         return url
     elif alternativeText is "":
@@ -139,7 +140,19 @@ def gen_link(url, text="", alternativeText=""):
     else:
         return '[{}]({} "{}")'.format(text, url, alternativeText)
 
+
 def gen_image_link(url, title, alt_text):
+    """Generate a link to an image.
+    
+    Args:
+      url string: The URL for the image link.
+      title string: The title of the image to display.
+      alt_text string: The alternative text (if the image can not be displayed).
+      
+    Returns:
+      string: The image URL formatted as Markdown link.
+      
+    """ 
     return '![{}]({} "{}")'.format(alt_text, url, title)
 
 def gen_reference(reference_id, reference_text, text="", references_list = None):
