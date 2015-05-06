@@ -2,7 +2,7 @@
 
 import unittest
 
-import PyMarkdownGen.PyMardownGen as md
+import PyMarkdownGen.PyMarkdownGen as md
 
 class AttributesTests(unittest.TestCase):
 
@@ -27,9 +27,10 @@ class AttributesTests(unittest.TestCase):
         self.assertEqual(expected, md.gen_italic(md.gen_bold("bold and italic text")))
         self.assertEqual(expected, md.gen_bold(md.gen_italic("bold and italic text")))
 
-        expected =  "**asterisks and _underscores_**"
+        expected = "**asterisks and _underscores_**"
 
-        self.assertEqual(expected, md.gen_bold("asterisks and " + md.gen_italic("underscores", True)))
+        self.assertEqual(expected, md.gen_bold("asterisks and " +
+                                               md.gen_italic("underscores", True)))
 
     def test_monspace(self):
         expected = "`monospace`"
