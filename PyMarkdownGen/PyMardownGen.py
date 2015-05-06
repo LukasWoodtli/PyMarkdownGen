@@ -121,6 +121,17 @@ def gen_heading(headingText, depth = 1, alternative = False):
 
 
 def gen_link(url, text="", alternativeText=""):
+    """Generate a link to an URL.
+    
+    Args:
+      url string: The URL for the link.
+      text string: The text to display instead of the URL.
+      alternativeText: The alternative text (usually displayed as tool tip).
+      
+    Returns:
+      The URL formatted as Markdown link.
+      
+    """   
     if text is "" and alternativeText is "":
         return url
     elif alternativeText is "":
