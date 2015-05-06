@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c0255f6-28c0-4603-8171-37165d005f9f" name="Default" comment="Add function to create image url">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/attributes_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/attributes_test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Boot.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/block_code_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/block_code_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_readme_file.py" afterPath="$PROJECT_DIR$/gen_readme_file.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/heading_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/heading_test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/link_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/link_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/lists_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/lists_test.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/references_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/references_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/table_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/table_test.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MarkdownGen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,20 +35,18 @@
       <file leaf-file-name="attributes_test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/attributes_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="810">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <element signature="e#2#17#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="block_code_test.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="block_code_test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/block_code_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8955917" vertical-offset="94" max-vertical-offset="645">
-              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="214" max-vertical-offset="660">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="e#2#17#0" expanded="true" />
               </folding>
@@ -58,18 +57,20 @@
       <file leaf-file-name="gen_readme_file.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gen_readme_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="524" max-vertical-offset="1245">
-              <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="814" max-vertical-offset="1275">
+              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+              <folding>
+                <element signature="e#36#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PyMarkdownGen.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PyMarkdownGen.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3165" max-vertical-offset="3645">
-              <caret line="223" column="7" selection-start-line="223" selection-start-column="7" selection-end-line="223" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.6519722" vertical-offset="4549" max-vertical-offset="5205">
+              <caret line="322" column="9" selection-start-line="322" selection-start-column="9" selection-end-line="322" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -88,8 +89,8 @@
       <file leaf-file-name="references_test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/references_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="870">
+              <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -98,7 +99,7 @@
       <file leaf-file-name="lists_test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/lists_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
+            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="495">
               <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
               <folding />
             </state>
@@ -108,8 +109,8 @@
       <file leaf-file-name="link_test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/link_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -118,8 +119,8 @@
       <file leaf-file-name="heading_test.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/heading_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="690">
-              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="675">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -130,9 +131,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="930">
               <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-              <folding>
-                <element signature="e#16#31#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -163,16 +162,16 @@
         <option value="$PROJECT_DIR$/markdown_gen/test/block_code_test.py" />
         <option value="$PROJECT_DIR$/markdown_gen/MardownGen.py" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/gen_readme_file.py" />
         <option value="$PROJECT_DIR$/PyMarkdownGen/PyMardownGen.py" />
-        <option value="$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py" />
         <option value="$PROJECT_DIR$/PyMarkdownGen/test/attributes_test.py" />
         <option value="$PROJECT_DIR$/PyMarkdownGen/test/table_test.py" />
-        <option value="$PROJECT_DIR$/PyMarkdownGen/test/references_test.py" />
         <option value="$PROJECT_DIR$/PyMarkdownGen/test/lists_test.py" />
-        <option value="$PROJECT_DIR$/PyMarkdownGen/test/link_test.py" />
-        <option value="$PROJECT_DIR$/PyMarkdownGen/test/heading_test.py" />
+        <option value="$PROJECT_DIR$/gen_readme_file.py" />
         <option value="$PROJECT_DIR$/PyMarkdownGen/test/block_code_test.py" />
+        <option value="$PROJECT_DIR$/PyMarkdownGen/test/heading_test.py" />
+        <option value="$PROJECT_DIR$/PyMarkdownGen/test/link_test.py" />
+        <option value="$PROJECT_DIR$/PyMarkdownGen/test/references_test.py" />
+        <option value="$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py" />
       </list>
     </option>
   </component>
@@ -181,6 +180,22 @@
     <option name="y" value="23" />
     <option name="width" value="1330" />
     <option name="height" value="788" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Buildout</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -262,6 +277,20 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="PyMarkdownGen">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -271,7 +300,7 @@
     <property name="FullScreen" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.lastSelected" value="preferences.externalTools" />
+    <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -281,7 +310,7 @@
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in attributes_test (1)">
+  <component name="RunManager" selected="Python.gen_readme_file">
     <configuration default="false" name="Unittests in block_code_test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -447,6 +476,22 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MarkdownGen" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="docs" factoryName="Docutils task">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -462,22 +507,6 @@
       <option name="docutils_params" value="" />
       <option name="docutils_task" value="" />
       <option name="docutils_open_in_browser" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="MarkdownGen" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="docs" factoryName="Sphinx task">
@@ -764,15 +793,15 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962447" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19548872" sideWeight="0.49377593" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.6943336" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19548872" sideWeight="0.5041494" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19548872" sideWeight="0.5062241" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.50039905" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32962447" sideWeight="0.49960095" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.49960095" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -816,6 +845,46 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/references_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="720">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/lists_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="495">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/link_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="465">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/heading_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="690">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/table_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="930">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/block_code_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="555">
@@ -830,7 +899,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1260">
           <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#36#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -861,20 +932,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="525">
           <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="e#16#31#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="570">
           <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/references_test.py">
@@ -889,9 +958,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="525">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#31#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -920,9 +987,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#17#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -930,27 +995,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="566" max-vertical-offset="1020">
           <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#36#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="139" max-vertical-offset="570">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/table_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="975">
           <caret line="28" column="56" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
-          <folding>
-            <element signature="e#16#31#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -979,9 +1044,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="600">
           <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-          <folding>
-            <element signature="e#2#17#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -996,9 +1059,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="600">
           <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-          <folding>
-            <element signature="e#2#17#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,9 +1074,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#31#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,9 +1089,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#16#31#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,9 +1097,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="495">
           <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-          <folding>
-            <element signature="e#16#31#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,21 +1158,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="765">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen_readme_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="524" max-vertical-offset="1245">
-          <caret line="51" column="34" selection-start-line="51" selection-start-column="34" selection-end-line="51" selection-end-column="34" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="765">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1129,21 +1175,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3165" max-vertical-offset="3645">
-          <caret line="223" column="7" selection-start-line="223" selection-start-column="7" selection-end-line="223" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/attributes_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#2#17#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1151,16 +1187,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="349" max-vertical-offset="930">
           <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/block_code_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="214" max-vertical-offset="660">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#16#31#0" expanded="true" />
+            <element signature="e#2#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/references_test.py">
+    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/heading_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="229" max-vertical-offset="675">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1173,29 +1217,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/references_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="870">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/link_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/heading_test.py">
+    <entry file="file://$PROJECT_DIR$/gen_readme_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="690">
-          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/test/block_code_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8955917" vertical-offset="94" max-vertical-offset="645">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1275">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
           <folding>
-            <element signature="e#2#17#0" expanded="true" />
+            <element signature="e#36#45#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6519722" vertical-offset="4549" max-vertical-offset="5205">
+          <caret line="322" column="9" selection-start-line="322" selection-start-column="9" selection-end-line="322" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

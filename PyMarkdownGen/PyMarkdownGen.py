@@ -23,7 +23,7 @@ def gen_table(data, aligning=None):
     table.
 
     Args:
-      data 2d-list of strings: The data to be represented as table.
+      data (2d-list of strings): The data to be represented as table.
       aligning (list of strings): The aligning for each row. The entries have
         following meaning:
         '^' center
@@ -97,9 +97,9 @@ def gen_heading(heading_text, depth=1, alternative=False):
     A line break is added to the output.
 
     Args:
-      headingText string: The name of the heading.
-      depth int: The level (depth) of the heading.
-      alternative bool: If this is set to true and the depth is
+      headingText (string): The name of the heading.
+      depth (int): The level (depth) of the heading.
+      alternative (bool): If this is set to true and the depth is
         1 or 2 then the alternitive fotmat of headings is used.
 
     Returns:
@@ -125,9 +125,9 @@ def gen_link(url, text="", alt_text=""):
     """Generate a link to an URL.
 
     Args:
-      url string: The URL for the link.
-      text string: The text to display instead of the URL.
-      alt_text string: The alternative text (usually
+      url (string): The URL for the link.
+      text (string): The text to display instead of the URL.
+      alt_text (string): The alternative text (usually
         displayed as tool tip).
 
     Returns:
@@ -146,9 +146,9 @@ def gen_image_link(url, title, alt_text):
     """Generate a link to an image.
 
     Args:
-      url string: The URL for the image link.
-      title string: The title of the image to display.
-      alt_text string: The alternative text (if the image can not be displayed).
+      url (string): The URL for the image link.
+      title (string): The title of the image to display.
+      alt_text (string): The alternative text (if the image can not be displayed).
 
     Returns:
       string: The image URL formatted as Markdown link.
@@ -159,6 +159,29 @@ def gen_image_link(url, title, alt_text):
 
 
 def gen_reference(reference_id, reference_text, text="", references_list=None):
+    """Creates a in-file reference.
+
+    A reference is contained by:
+      - An ID (reference_id)
+      - A text that is displayed later in the document (reference_text)
+      - An optional text (text) that is displayed just before the id.
+
+    Since the reference_text is displayed later in the document (usually at
+    the end) all reference_text's can be collected in a list.
+
+    Args:
+      reference_id (string): This is a unique id to of the reference.
+      reference_text (string): This is the text that should be displayed
+        later in the document.
+      text (string, optional): It's displayed just before the ID.
+      reference_list (list of strings, optional): The reference text is
+        added to this list and then the list is returned.
+
+    Returns:
+      string: The id and (optional) text.
+      list of strings: Updated list with references for later use.
+
+    """
     if text is "":
         md_str = " [{}]".format(reference_id)
     else:
@@ -168,6 +191,7 @@ def gen_reference(reference_id, reference_text, text="", references_list=None):
         references_list = []
     references_list.append(ref)
     return md_str, references_list
+
 
 def gen_new_line():
     """Generate a new line.
@@ -195,24 +219,78 @@ def gen_section():
 
 
 def gen_italic(text, alternative=False):
+    """Creates text in italics.
+
+    Args:
+      text (string): The text to set to italics.
+      alternative (bool): Use alternative format '_' instead of '*'
+
+    Returns:
+        string: The text formatted as italics.
+
+    """
     if alternative:
         return "_" + text + "_"
     else:
         return "*" + text + "*"
 
+
 def gen_bold(text, alternative=False):
+    """Creates a bold text.
+
+    Args:
+      text (string): The text to set bolt.
+      alternative (bool): If true '_' is used instead of '*'
+
+    Returns:
+      string: The bold formatted text.
+
+    """
     if alternative:
         return "__" + text + "__"
     else:
         return "**" + text + "**"
 
+
 def gen_monospace(text):
+    """Creates a monospace typed text.
+
+    This is often used for source code formatting.
+
+    Args:
+      text (string): The text to be formatted with
+        monospace.
+
+    Returns:
+      string: The monospace formatted text.
+
+    """
     return "`" + text + "`"
 
+
 def gen_strikethrough(text):
+    """ Strikes through the provided text.
+
+    Args:
+      text (string): The text to be strike through.
+
+    Returns:
+      The formatted markdown text.
+
+    """
     return "~~" + text + "~~"
 
+
 def gen_ordered_list(list_items):
+    """Generates a numbered list.
+
+    Args:
+     list_items (list of strings): The items to be listed.
+
+    Returns:
+      The markdown formatted list.
+
+    """
     # if isinstance(a, collections.Iterable):
     md_str = ""
     for i, text in enumerate(list_items):
@@ -221,17 +299,43 @@ def gen_ordered_list(list_items):
     return md_str
 
 def gen_un_ordered_list(list_items, bullet_char="*"):
+    """Generates a bullet list.
+
+    The bullet character can be provided.
+
+    Args:
+     list_items (list of strings): The items to be listed.
+     bullet_char (char, optional): The bullet character '*'
+       is default.
+
+    Returns:
+      string: The markdown formatted list.
+
+    """
     md_str = ""
     for item in list_items:
         md_str += "{} {}\n".format(bullet_char, item)
     return md_str
 
 def gen_block_quote(text, simple=False):
+    """Creates a block quoted text.
+
+    Args:
+      text (string): The text in the block quote.
+      simple (bool, optional): If simple is set true
+        only the first line is marked with the block
+        quote char ('>'). Otherwise all lines are
+        marked with the block quote char.
+
+    Returns
+      string: The formatted text as block quote.
+
+    """
     if simple:
         return "> " + text + "\n"
     else:
         text = text.splitlines()
-        str = ""
+        md_str = ""
         for line in text:
-            str += "> " + line + "\n"
-        return str
+            md_str += "> " + line + "\n"
+        return md_str

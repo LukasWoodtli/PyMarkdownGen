@@ -2,7 +2,7 @@
 __author__ = 'Boot'
 
 import os
-import PyMarkdownGen.PyMardownGen as mdg
+import PyMarkdownGen.PyMarkdownGen as mdg
 from datetime import datetime as dt
 
 OUTPUT_FILE = os.path.realpath(__file__)
@@ -73,7 +73,7 @@ actual_date = dt.strftime(dt.now(), "%c")
 
 str += "Last generation: " + actual_date + "."
 
-
+assert False
 
 with open(OUTPUT_FILE, "w") as readme_file:
     readme_file.write(str)
