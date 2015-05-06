@@ -1,7 +1,7 @@
 __author__ = 'Boot'
 
 import unittest
-import PyMarkdownGen.PyMardownGen as md
+import PyMarkdownGen.PyMarkdownGen as md
 
 
 class LinkTests(unittest.TestCase):

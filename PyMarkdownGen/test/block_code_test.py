@@ -2,7 +2,7 @@
 
 import unittest
 
-import PyMarkdownGen.PyMardownGen as md
+import PyMarkdownGen.PyMarkdownGen as md
 
 class BlockquoteTests(unittest.TestCase):
 
@@ -14,7 +14,10 @@ class BlockquoteTests(unittest.TestCase):
 > on multiple
 > lines.
 """
-        self.assertEqual(expected, md.gen_block_quote("this is a\nblock quote\non multiple\r\nlines."))
+        self.assertEqual(expected,
+                         md.gen_block_quote(
+                             "this is a\nblock quote\n"
+                             "on multiple\r\nlines."))
 
 
     def test_block_quote_simple(self):
@@ -24,7 +27,10 @@ block quote
 on multiple
 lines.
 """
-        self.assertEqual(expected, md.gen_block_quote("this is a simple\nblock quote\non multiple\nlines.", True))
+        self.assertEqual(expected,
+                         md.gen_block_quote(
+                             "this is a simple\nblock quote\n"
+                             "on multiple\nlines.", True))
 
 
 
