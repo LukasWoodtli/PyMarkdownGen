@@ -1,6 +1,11 @@
 language: python
 python:
   - "2.7"
+  
+install:
+ - pip install pylint
 
 script: 
  - python -m unittest discover . -p *test*.py
+ - pylint PyMarkdownGen/ PyMarkdownGen.py
+ 

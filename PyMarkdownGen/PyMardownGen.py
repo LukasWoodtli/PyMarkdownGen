@@ -155,6 +155,8 @@ def gen_image_link(url, title, alt_text):
     """ 
     return '![{}]({} "{}")'.format(alt_text, url, title)
 
+
+0
 def gen_reference(reference_id, reference_text, text="", references_list = None):
     if text is "":
         str = " [{}]".format(reference_id)
