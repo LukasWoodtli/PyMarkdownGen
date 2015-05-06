@@ -89,6 +89,22 @@ def gen_table(data, aligning=None):
 
 
 def gen_heading(headingText, depth = 1, alternative = False):
+    """Creates a Markdown heading.
+    
+    This function creates a heading of the given depth. There
+    is also an alternative format for the depth 1 and 2.
+    A line break is added to the output.
+    
+    Args:
+      headingText string: The name of the heading.
+      depth int: The level (depth) of the heading.
+      alternative bool: If this is set to true and the depth is
+        1 or 2 then the alternitive fotmat of headings is used.
+    
+    Returns:
+      string: The heading text formatted as heading.
+      
+    """
     if alternative and depth == 1:
         str = headingText + "\n"
         str += "=" * len(headingText)
