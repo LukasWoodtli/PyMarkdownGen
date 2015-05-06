@@ -24,19 +24,17 @@ def gen_table(data, aligning=None):
     Args:
       data 2d-list of strings: The data to be represented as table.
       aligning (list of strings): The aligning for each row. The entries have
-                                  following meaning:
-                                  '^' center
-                                  '<' left align
-                                  '>' right align
-                                  If no aligning list is provided, all columns
-                                  are left aligned. If the aligning list has
-                                  less entries than columns in data the last
-                                  columns are left aligned. If the provided
-                                  aligning list has more entries than columns
-                                  in data the unused are ignored.
+        following meaning:
+        '^' center
+        '<' left align
+        '>' right align
+        If no aligning list is provided, all columns are left aligned. If the 
+        aligning list has less entries than columns in data the remaining columns 
+        are left aligned. If the provided aligning list has more entries than 
+        columns in data the unused entries are ignored.
       
     Returns:
-      A markdown string containing the table.
+      string: A markdown string containing the table.
       
     """
     # no aligning: default is left
