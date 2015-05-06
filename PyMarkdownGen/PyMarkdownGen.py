@@ -14,13 +14,13 @@ from collections import defaultdict
 
 def gen_table(data, aligning=None):
     """Generates a table from a 2 dimentional list.
-    
-    The format of the generated table is as described at: 
+
+    The format of the generated table is as described at:
     https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#tables
     The function adds a new line to the end.
 
     The first row of data is used as headers for the table.
-    
+
     Args:
       data 2d-list of strings: The data to be represented as table.
       aligning (list of strings): The aligning for each row. The entries have
@@ -28,14 +28,14 @@ def gen_table(data, aligning=None):
         '^' center
         '<' left align
         '>' right align
-        If no aligning list is provided, all columns are left aligned. If the 
-        aligning list has less entries than columns in data the remaining columns 
-        are left aligned. If the provided aligning list has more entries than 
+        If no aligning list is provided, all columns are left aligned. If the
+        aligning list has less entries than columns in data the remaining columns
+        are left aligned. If the provided aligning list has more entries than
         columns in data the unused entries are ignored.
-      
+
     Returns:
       string: A markdown string containing the table.
-      
+
     """
     # no aligning: default is left
     if not aligning:
@@ -90,20 +90,20 @@ def gen_table(data, aligning=None):
 
 def gen_heading(headingText, depth=1, alternative=False):
     """Creates a Markdown heading.
-    
+
     This function creates a heading of the given depth. There
     is also an alternative format for the depth 1 and 2.
     A line break is added to the output.
-    
+
     Args:
       headingText string: The name of the heading.
       depth int: The level (depth) of the heading.
       alternative bool: If this is set to true and the depth is
         1 or 2 then the alternitive fotmat of headings is used.
-    
+
     Returns:
       string: The heading text formatted as heading.
-      
+
     """
     if alternative and depth == 1:
         str = headingText + "\n"
@@ -122,17 +122,17 @@ def gen_heading(headingText, depth=1, alternative=False):
 
 def gen_link(url, text="", alternativeText=""):
     """Generate a link to an URL.
-    
+
     Args:
       url string: The URL for the link.
       text string: The text to display instead of the URL.
-      alternativeText string: The alternative text (usually 
+      alternativeText string: The alternative text (usually
         displayed as tool tip).
-      
+
     Returns:
       string: The URL formatted as Markdown link.
-      
-    """  
+
+    """
     if text is "" and alternativeText is "":
         return url
     elif alternativeText is "":
@@ -143,16 +143,16 @@ def gen_link(url, text="", alternativeText=""):
 
 def gen_image_link(url, title, alt_text):
     """Generate a link to an image.
-    
+
     Args:
       url string: The URL for the image link.
       title string: The title of the image to display.
       alt_text string: The alternative text (if the image can not be displayed).
-      
+
     Returns:
       string: The image URL formatted as Markdown link.
-      
-    """ 
+
+    """
     return '![{}]({} "{}")'.format(alt_text, url, title)
 
 
@@ -167,27 +167,27 @@ def gen_reference(reference_id, reference_text, text="", references_list=None):
         references_list = []
     references_list.append(ref)
     return str, references_list
-    
+
 def gen_new_line():
     """Generate a new line.
-    
+
     Markdown uses two spaces and a line break for creating a new line in
     the output.
-    
+
     Returns:
       stringh The chars needed for a new line.
-      
+
     """
     return "  \n"
 
 def gen_section():
     """Create a new section.
-    
+
     Markdown uses two line breaks to create a new section.
-    
+
     Returns:
       string: The string with the characters for a new section.
-      
+
     """
     return "\n\n"
 
