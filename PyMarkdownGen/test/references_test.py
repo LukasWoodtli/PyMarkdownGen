@@ -1,13 +1,20 @@
-
+"""This module contains the unit tests for generation of in-file references."""
 import unittest
 
 import PyMarkdownGen.PyMarkdownGen as md
 
 class ReferencesTest(unittest.TestCase):
+    """The test case (fixture) for reference generation."""
 
 
     def test_references_complex(self):
-        # text taken from: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links
+        """Test different possible styles of reference generation.
+
+        The text is taken from:
+        https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#links
+
+        """
+
         expected = \
 """[I'm a reference-style link][arbitrary reference text]
 
