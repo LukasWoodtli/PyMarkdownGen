@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3c0255f6-28c0-4603-8171-37165d005f9f" name="Default" comment="Add function to create image url">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Boot.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/block_code_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/block_code_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen_readme_file.py" afterPath="$PROJECT_DIR$/gen_readme_file.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/heading_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/heading_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/link_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/link_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PyMarkdownGen/test/references_test.py" afterPath="$PROJECT_DIR$/PyMarkdownGen/test/references_test.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3c0255f6-28c0-4603-8171-37165d005f9f" name="Default" comment="Add function to create image url" />
     <ignored path="MarkdownGen.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,8 +60,8 @@
       <file leaf-file-name="PyMarkdownGen.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6519722" vertical-offset="4549" max-vertical-offset="5205">
-              <caret line="322" column="9" selection-start-line="322" selection-start-column="9" selection-end-line="322" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.8259861" vertical-offset="4549" max-vertical-offset="5205">
+              <caret line="327" column="41" selection-start-line="327" selection-start-column="41" selection-end-line="327" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -1245,8 +1236,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PyMarkdownGen/PyMarkdownGen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6519722" vertical-offset="4549" max-vertical-offset="5205">
-          <caret line="322" column="9" selection-start-line="322" selection-start-column="9" selection-end-line="322" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.8259861" vertical-offset="4549" max-vertical-offset="5205">
+          <caret line="327" column="41" selection-start-line="327" selection-start-column="41" selection-end-line="327" selection-end-column="41" />
           <folding />
         </state>
       </provider>

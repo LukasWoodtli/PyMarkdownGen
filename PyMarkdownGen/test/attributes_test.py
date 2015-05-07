@@ -16,12 +16,12 @@ class AttributesTests(unittest.TestCase):
 
     def test_italic(self):
         """Test italic text.
-        
+
         The regular format (with '*') and the alternative
         format (with '_') is tested.
-        
+
         """
-        
+
         expected = "*italic text*"
         self.assertEqual(expected, md.gen_italic("italic text"))
 
@@ -31,12 +31,12 @@ class AttributesTests(unittest.TestCase):
 
     def test_bold(self):
         """Test bold text.
-        
+
         The regular format (with '*') and the alternative
         format (with '_') is tested.
-        
+
         """
-        
+
         expected = "**bold text**"
         self.assertEqual(expected, md.gen_bold("bold text"))
 
@@ -45,13 +45,13 @@ class AttributesTests(unittest.TestCase):
 
     def test_bold_and_italic(self):
         """Test italic and bold text.
-        
+
         The regular format (with '*') and the alternative
         format (with '_') is tested.
         Also the combination of the two formats is tested.
-        
+
         """
-        
+
         expected = "***bold and italic text***"
         self.assertEqual(expected, md.gen_italic(md.gen_bold("bold and italic text")))
         self.assertEqual(expected, md.gen_bold(md.gen_italic("bold and italic text")))
@@ -63,7 +63,7 @@ class AttributesTests(unittest.TestCase):
 
     def test_monspace(self):
         """Test text that should be typed in a monospace font."""
-        
+
         expected = "`monospace`"
         self.assertEqual(expected, md.gen_monospace("monospace"))
 
