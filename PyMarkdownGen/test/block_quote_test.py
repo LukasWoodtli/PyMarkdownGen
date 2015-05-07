@@ -1,6 +1,6 @@
 """This module contains the unit tests for
    the formatting of block quotes.
-   
+
 """
 
 import unittest
@@ -13,9 +13,9 @@ class BlockquoteTests(unittest.TestCase):
     def test_block_quote(self):
         """Tests block quotes that contains a '>'
            on every line.
-           
+
         """
-        
+
         expected = \
 """> this is a
 > block quote
@@ -31,9 +31,9 @@ class BlockquoteTests(unittest.TestCase):
     def test_block_quote_simple(self):
         """Tests block quotes that contain a '>'
            only on the first line.
-           
+
         """
-        
+
         expected = \
 """> this is a simple
 block quote

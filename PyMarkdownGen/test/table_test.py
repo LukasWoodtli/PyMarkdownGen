@@ -1,19 +1,16 @@
 # coding=utf-8
-
+"""This module contains the unit tests for table generation."""
 import unittest
 
 import PyMarkdownGen.PyMarkdownGen as md
 
 class TableTest(unittest.TestCase):
+    """The test case (fixture) for table generation."""
 
-    def setUp(self):
-        self.data = [
-            ["abcdefghij", "aaa", "b"],
-            ["b", "c", "b"],
-            ["dddddddddd", "a", "c"]
-        ]
 
     def test_table_gen(self):
+        """Generate a table."""
+
         expected = \
 """\
 | abcdefghij | aaa | b |
@@ -21,10 +18,19 @@ class TableTest(unittest.TestCase):
 | b          | c   | b |
 | dddddddddd | a   | c |
 """
-        self.assertEqual(expected, md.gen_table(self.data))
+
+        data = [
+            ["abcdefghij", "aaa", "b"],
+            ["b", "c", "b"],
+            ["dddddddddd", "a", "c"]
+            ]
+
+        self.assertEqual(expected, md.gen_table(data))
 
 
     def test_table_alignment(self):
+        """Generate a table that has different aligned columns."""
+
         expected = \
 """\
 | Tables        |      Are      |  Cool |
