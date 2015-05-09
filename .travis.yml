@@ -11,5 +11,5 @@ install:
 script: 
  - python -m unittest discover . -p *test*.py
  - pylint PyMarkdownGen
- - coverage run -m unittest discover . -p *test*.py
+ - coverage run --branch -m unittest discover . -p *test*.py
  - coverage report -m
