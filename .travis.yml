@@ -4,9 +4,11 @@ python:
   
 install:
  - pip install pylint
+ - pip install coverage
 # - pip install sphinx
 # - pip install sphinxcontrib-napoleon
 
 script: 
  - python -m unittest discover . -p *test*.py
  - pylint PyMarkdownGen
+ - coverage run -m unittest discover . -p *test*.py
