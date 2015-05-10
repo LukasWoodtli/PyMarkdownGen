@@ -5,7 +5,7 @@ python:
 install:
  - pip install pylint
  - pip install coverage
-- pip install coveralls
+ - pip install coveralls
 # - pip install sphinx
 # - pip install sphinxcontrib-napoleon
 
