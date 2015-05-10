@@ -2,7 +2,6 @@ __author__ = 'Boot'
 
 
 def gen_stub(string):
-    txt = string.strip()
     func_name = string.replace("\n", "")
 
     method_name = func_name.replace("gen_", "add_")
@@ -18,6 +17,6 @@ def gen_stub(string):
 
 with open("PyMarkdownGen.py") as in_file:
     lines = in_file.readlines()
-    lines = [line for line in lines if line.startswith("def")]
-    for line in lines:
+    LINES = [line for line in lines if line.startswith("def")]
+    for line in LINES:
         print gen_stub(line)
