@@ -1,19 +1,53 @@
-
-__author__ = 'Boot'
+# -*- coding: utf-8 -*-
+"""This file contains the API for a Markdown
+document. It's a simple Object Oriented API."""
+__author__ = 'Lukas Woodtli'
 
 from . import PyMarkdownGen as pmg
 
 class Document(object):
+    """This class represents a Markdown document.
+    
+    Usually a document is saved in a single file.
+    
+    """
 
     def __init__(self, file_path=""):
+        """The constructor generates a Markdown
+        document.
+        
+        Args:
+          file_path (string, optional): the path
+            of the Markdown document."""
         self.file_path = file_path
         self.md_text = ""
         self.references_list = []
 
     def add_text(self, text):
+        """Adds a plain text.
+        
+        This is just a convenience function.
+        
+        """
+       
         self.md_text += text
 
     def add_table(self, data, aligning=None):
+        """Adds a table to the Markdown document.
+        
+        Args:
+          data (2-d list of strings): The data to be
+            represented as a table. The first row is used
+            as column titles.
+          aligning (list of chars): Sets the alignment for
+            each column:
+              '<': left align
+              '>': right align
+              '^': center
+            Default is left align.
+            
+        """
+          
         self.md_text += pmg.gen_table(data, aligning)
 
 
