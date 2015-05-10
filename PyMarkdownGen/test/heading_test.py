@@ -57,11 +57,11 @@ class HeadingTests(unittest.TestCase):
 
     def test_gen_section(self):
         """Test the generation of a new section."""
-        expected ="Section 1\n\nSection 2"
+        expected = "Section 1\n\nSection 2"
         actual = "Section 1"
         actual += md.gen_section()
         actual += "Section 2"
-        self.assertEqual(expected,actual)
+        self.assertEqual(expected, actual)
 
 if __name__ == '__main__':
     unittest.main()  # pragma: no cover
