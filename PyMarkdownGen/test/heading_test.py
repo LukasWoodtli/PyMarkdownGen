@@ -47,9 +47,21 @@ class HeadingTests(unittest.TestCase):
         expected = "### Heading 3\n"
         self.assertEqual(expected, md.gen_heading("Heading 3", 3, True))
 
+    def test_new_line(self):
+        """Tests the generation of a new line."""
+        expected = "First line  \nnew line."
+        actual = "First line"
+        actual += md.gen_new_line()
+        actual += "new line."
+        self.assertEqual(expected, actual)
 
-
-
+    def test_gen_section(self):
+        """Test the generation of a new section."""
+        expected ="Section 1\n\nSection 2"
+        actual = "Section 1"
+        actual += md.gen_section()
+        actual += "Section 2"
+        self.assertEqual(expected,actual)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main()  # pragma: no branch
