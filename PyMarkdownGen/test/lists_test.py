@@ -30,4 +30,4 @@ class ListTest(unittest.TestCase):
             ["one intem", "next item", "one more", "and so on"]))
 
 if __name__ == '__main__':
-    unittest.main()   # pragma: no branch
+    unittest.main()   # pragma: no cover

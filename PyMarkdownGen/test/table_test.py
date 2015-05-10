@@ -60,4 +60,4 @@ class TableTest(unittest.TestCase):
         self.assertEqual(expected, md.gen_table(data, ['<', '^']))
 
 if __name__ == '__main__':
-    unittest.main()  # pragma: no branch
+    unittest.main()  # pragma: no cover

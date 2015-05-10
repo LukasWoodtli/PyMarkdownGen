@@ -77,4 +77,4 @@ class AttributesTests(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()   # pragma: no branch
+    unittest.main()   # pragma: no cover

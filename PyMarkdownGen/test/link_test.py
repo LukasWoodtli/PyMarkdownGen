@@ -44,4 +44,4 @@ class LinkTests(unittest.TestCase):
                                            "alt text"))
 
 if __name__ == '__main__':
-    unittest.main()   # pragma: no branch
+    unittest.main()   # pragma: no cover
