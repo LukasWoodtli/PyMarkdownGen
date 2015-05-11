@@ -1,0 +1,43 @@
+Markdown Generator for Python
+=============================
+Status
+------
+![Travis CI Build Status](https://travis-ci.org/LukasWoodtli/PyMarkdownGen.svg?branch=master "Build Status")
+
+Objective
+---------
+This is a small Python library that helps generating [Markdown](http://en.wikipedia.org/wiki/Markdown) documents.
+
+Examples
+--------
+### Text Attributes
+Text can be formatted with the attributes *italc* and **bold**.
+There is also `monospace text` or ~~striketrough~~.
+
+Features
+--------
+| Feature         | Implemented | Tested |
+|-----------------|:-----------:|:------:|
+| Headers         |     ✓     |  ✓   |
+| Links           |     ✓     |  ✓   |
+| References      |     ✓     |  ✓   |
+| Images          |     ✓     |  ✓   |
+| Tables          |     ✓     |  ✓   |
+| Lists           |     ✓     |  ✓   |
+| Nested Lists    |     ✗     |  ✗   |
+| Blockquotes     |     ✓     |  ✓   |
+| Emphasis        |     ✓     |  ✓   |
+| Code and Syntax |     ✗     |  ✗   |
+
+
+To Do's
+-------
+* Docstrings
+* Document based API (OOP)
+* Documentation (ReadTheDocs)
+* More unit tests
+
+
+Further Notes
+-------------
+...

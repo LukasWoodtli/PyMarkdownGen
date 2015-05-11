@@ -238,10 +238,3 @@ class Document(object):
                 self.md_text += ref
 
         return self.md_text
-
-
-    def save_file(self):
-        """Save the document to a file."""
-
-        with open(self.file_path, 'w') as out_file:
-            out_file.writelines(self.md_text)
