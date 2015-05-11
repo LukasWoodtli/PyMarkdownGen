@@ -88,7 +88,17 @@ class Document(object):
         self.md_text += pmg.gen_link(url, text, alt_text)
 
 
+    
     def add_image_link(self, url, title, alt_text):
+        """Add a link to an image.
+        
+        Args:
+          url (string): The URL to the image.
+          title (string): The title of the image.
+          alt_text (string): An alternative text for the image.
+          
+        """
+        
         self.md_text += pmg.gen_image_link(url, title, alt_text)
 
 
