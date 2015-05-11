@@ -1,14 +1,24 @@
-__author__ = 'Boot'
+"""This module contains some tests from the original
+Markdown test suite."""
+
+__author__ = 'Lukas Woodtli'
 
 import unittest
 from PyMarkdownGen.test.document_test_base import DocumentTestBase
 import PyMarkdownGen.Document as md_doc
 
 class TestAmpsAndAngles(DocumentTestBase):
+    """Some tests from the original Markdown test cases."""
+    
     def setUp(self):
+        """Set up the file with the expected output."""
+        
         self.set_expected("Amps and angle encoding.text")
+        
 
     def test_amps_and_ange_encoding(self):
+        """Create a text that represents the expected file."""
+       
         md_document = md_doc.Document()
         md_document.add_text("AT&T has an ampersand in their name.")
         md_document.add_section()
