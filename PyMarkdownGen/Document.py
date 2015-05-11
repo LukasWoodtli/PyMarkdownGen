@@ -74,6 +74,17 @@ class Document(object):
 
    
     def add_link(self, url, text="", alt_text=""):
+        """Adds a link to the document.
+        
+        Args:
+          url (string): The URL for the link.
+          text (string, optional): The text that is shown
+            instead of the URL.
+          alt_text(string,optional): The alternative text
+            for the link.
+            
+        """
+        
         self.md_text += pmg.gen_link(url, text, alt_text)
 
 
