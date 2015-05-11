@@ -12,17 +12,22 @@ class Document(object):
     
     """
 
+    
     def __init__(self, file_path=""):
         """The constructor generates a Markdown
         document.
         
         Args:
           file_path (string, optional): the path
-            of the Markdown document."""
+            of the Markdown document.
+            
+        """
+        
         self.file_path = file_path
         self.md_text = ""
         self.references_list = []
 
+    
     def add_text(self, text):
         """Adds a plain text.
         
@@ -32,6 +37,7 @@ class Document(object):
        
         self.md_text += text
 
+    
     def add_table(self, data, aligning=None):
         """Adds a table to the Markdown document.
         
@@ -52,9 +58,21 @@ class Document(object):
 
 
     def add_heading(self, heading_text, depth=1, alternative=False):
+        """Adds a heading of the given depth to the document.
+        
+        Args:
+          heading_text (string): The text of the heading.
+          depth (int): The depth (level) of the heading.
+          alternative (bool): For the depth 1 and 2 there is an alternative
+            representation.
+            on.
+            
+        """
+
         self.md_text += pmg.gen_heading(heading_text, depth, alternative)
 
 
+   
     def add_link(self, url, text="", alt_text=""):
         self.md_text += pmg.gen_link(url, text, alt_text)
 
