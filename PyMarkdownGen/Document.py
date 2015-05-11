@@ -161,26 +161,77 @@ class Document(object):
 
 
     def add_monospace(self, text):
+        """Add text that is typed in a mono space font.
+        
+        Args:
+          text (string): The text that has to be typed 
+            in a mono space font.
+            
+        """
+        
         self.md_text += pmg.gen_monospace(text)
 
 
     def add_strikethrough(self, text):
+        """Add text that is striked through
+        
+        Args:
+          text (string): Text to be striked.
+          
+        """
+        
         self.md_text += pmg.gen_strikethrough(text)
 
 
     def add_ordered_list(self, list_items):
+        """Creates an ordered list.
+        
+        Args:
+          list_items (list of strings): The items to be
+            listed.
+            
+        """
         self.md_text += pmg.gen_ordered_list(list_items)
 
 
     def add_un_ordered_list(self, list_items, bullet_char="*"):
+        """Creates and adds an unordered list.
+        
+        The bullet char can be provided.
+        
+        Args:
+          list_items (list of strings): The items to be
+            listed.
+          bullet_char (char, optional): The bullet character,
+            default: '*'
+            
+        """
+        
         self.md_text += pmg.gen_un_ordered_list(list_items, bullet_char)
 
 
     def add_block_quote(self, text, simple=False):
+        """Add a block quote.
+        
+        Args:
+          text (string): The text for the block quote.
+          simple (bool, optional): If True only the first
+            row is prepended witch '> '
+        """
+        
         self.md_text += pmg.gen_block_quote(text, simple)
 
 
     def get_markdown_text(self, append_references=False):
+        """Get the complete text with Markdown foratting.
+        
+        Args:
+          append_references (bool, optional): If True it appends
+            any reference added earlier in the document.
+            Default: False
+            
+        """
+      
         if append_references:
             self.md_text += "\n"
             for ref in self.references_list:
@@ -188,6 +239,9 @@ class Document(object):
 
         return self.md_text
 
+    
     def save_file(self):
+        """Save the document to a file."""
+        
         with open(self.file_path, 'w') as out_file:
             out_file.writelines(self.md_text)
