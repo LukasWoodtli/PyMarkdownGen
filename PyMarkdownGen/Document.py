@@ -103,6 +103,17 @@ class Document(object):
 
 
     def add_reference(self, reference_id, reference_text, text=""):
+        """Add a in-file reference.
+        
+        Args:
+          referece_id (string): The ID of the reference.
+          reference_text (string): The text that is displayed
+            later in the document.
+          reference_text (string, optional): An alternative
+            reference text.
+            
+        """
+        
         md_text, references = pmg.gen_reference(reference_id,
                                                 reference_text,
                                                 text,
