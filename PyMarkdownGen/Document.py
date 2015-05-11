@@ -7,40 +7,40 @@ from . import PyMarkdownGen as pmg
 
 class Document(object):
     """This class represents a Markdown document.
-    
+
     Usually a document is saved in a single file.
-    
+
     """
 
-    
+
     def __init__(self, file_path=""):
         """The constructor generates a Markdown
         document.
-        
+
         Args:
           file_path (string, optional): the path
             of the Markdown document.
-            
+
         """
-        
+
         self.file_path = file_path
         self.md_text = ""
         self.references_list = []
 
-    
+
     def add_text(self, text):
         """Adds a plain text.
-        
+
         This is just a convenience function.
-        
+
         """
-       
+
         self.md_text += text
 
-    
+
     def add_table(self, data, aligning=None):
         """Adds a table to the Markdown document.
-        
+
         Args:
           data (2-d list of strings): The data to be
             represented as a table. The first row is used
@@ -51,69 +51,69 @@ class Document(object):
               '>': right align
               '^': center
             Default is left align.
-            
+
         """
-          
+
         self.md_text += pmg.gen_table(data, aligning)
 
 
     def add_heading(self, heading_text, depth=1, alternative=False):
         """Adds a heading of the given depth to the document.
-        
+
         Args:
           heading_text (string): The text of the heading.
           depth (int): The depth (level) of the heading.
           alternative (bool): For the depth 1 and 2 there is an alternative
             representation.
             on.
-            
+
         """
 
         self.md_text += pmg.gen_heading(heading_text, depth, alternative)
 
 
-   
+
     def add_link(self, url, text="", alt_text=""):
         """Adds a link to the document.
-        
+
         Args:
           url (string): The URL for the link.
           text (string, optional): The text that is shown
             instead of the URL.
           alt_text(string,optional): The alternative text
             for the link.
-            
+
         """
-        
+
         self.md_text += pmg.gen_link(url, text, alt_text)
 
 
-    
+
     def add_image_link(self, url, title, alt_text):
         """Add a link to an image.
-        
+
         Args:
           url (string): The URL to the image.
           title (string): The title of the image.
           alt_text (string): An alternative text for the image.
-          
+
         """
-        
+
         self.md_text += pmg.gen_image_link(url, title, alt_text)
 
 
     def add_reference(self, reference_id, reference_text, text=""):
         """Add a in-file reference.
-        
+
         Args:
           referece_id (string): The ID of the reference.
           reference_text (string): The text that is displayed
             later in the document.
           reference_text (string, optional): An alternative
             reference text.
-            
+
         """
-        
+
         md_text, references = pmg.gen_reference(reference_id,
                                                 reference_text,
                                                 text,
@@ -124,114 +124,114 @@ class Document(object):
 
     def add_new_line(self):
         """Adds a new line to the Markdown document."""
-        
+
         self.md_text += pmg.gen_new_line()
 
 
-    
+
     def add_section(self):
         """Create a new section in the Markdown document."""
-        
+
         self.md_text += pmg.gen_section()
 
 
 
     def add_italic(self, text, alternative=False):
         """Add italic text to the document.
-        
+
         Args:
           text (string): Text to be set in italics.
           alternative (bool, optional): Use the alternative style.
-          
+
         """
-        
+
         self.md_text += pmg.gen_italic(text, alternative)
 
 
     def add_bold(self, text, alternative=False):
         """Add bokd text to document.
-        
+
         Args:
           text (string): The text to type bolt.
           alternative(bool, optional): Use alternative style.
-          
+
         """
-        
+
         self.md_text += pmg.gen_bold(text, alternative)
 
 
     def add_monospace(self, text):
         """Add text that is typed in a mono space font.
-        
+
         Args:
-          text (string): The text that has to be typed 
+          text (string): The text that has to be typed
             in a mono space font.
-            
+
         """
-        
+
         self.md_text += pmg.gen_monospace(text)
 
 
     def add_strikethrough(self, text):
         """Add text that is striked through
-        
+
         Args:
           text (string): Text to be striked.
-          
+
         """
-        
+
         self.md_text += pmg.gen_strikethrough(text)
 
 
     def add_ordered_list(self, list_items):
         """Creates an ordered list.
-        
+
         Args:
           list_items (list of strings): The items to be
             listed.
-            
+
         """
         self.md_text += pmg.gen_ordered_list(list_items)
 
 
     def add_un_ordered_list(self, list_items, bullet_char="*"):
         """Creates and adds an unordered list.
-        
+
         The bullet char can be provided.
-        
+
         Args:
           list_items (list of strings): The items to be
             listed.
           bullet_char (char, optional): The bullet character,
             default: '*'
-            
+
         """
-        
+
         self.md_text += pmg.gen_un_ordered_list(list_items, bullet_char)
 
 
     def add_block_quote(self, text, simple=False):
         """Add a block quote.
-        
+
         Args:
           text (string): The text for the block quote.
           simple (bool, optional): If True only the first
             row is prepended witch '> '
         """
-        
+
         self.md_text += pmg.gen_block_quote(text, simple)
 
 
     def get_markdown_text(self, append_references=False):
         """Get the complete text with Markdown foratting.
-        
+
         Args:
           append_references (bool, optional): If True it appends
             any reference added earlier in the document.
             Default: False
-            
+
         """
-      
+
         if append_references:
             self.md_text += "\n"
             for ref in self.references_list:
@@ -239,9 +239,9 @@ class Document(object):
 
         return self.md_text
 
-    
+
     def save_file(self):
         """Save the document to a file."""
-        
+
         with open(self.file_path, 'w') as out_file:
             out_file.writelines(self.md_text)

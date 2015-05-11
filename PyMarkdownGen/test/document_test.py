@@ -11,11 +11,11 @@ import PyMarkdownGen.Document as md
 
 class DocumentTest(unittest.TestCase):
     """The test case (fixture) for the document based tests."""
-    
-    
+
+
     def test_document_generation(self):
         """Tests a simple case of the document based API."""
-       
+
         doc = md.Document("test_doc.md")
         doc.add_heading("Test", 1, True)
 
