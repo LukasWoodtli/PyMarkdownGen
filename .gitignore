@@ -56,5 +56,5 @@ docs/_build/
 target/
 
 # PyCharm
-.idea/workspace.xml
+.idea/
 

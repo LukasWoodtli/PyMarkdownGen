@@ -4,7 +4,7 @@ Markdown test suite."""
 __author__ = 'Lukas Woodtli'
 
 import unittest
-from PyMarkdownGen.test.document_test_base import get_expected_markdown_text
+from PyMarkdownGen.test.document_test_common import get_expected_markdown_text
 import PyMarkdownGen.Document as md_doc
 
 class TestAmpsAndAngles(unittest.TestCase):
