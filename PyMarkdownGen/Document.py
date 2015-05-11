@@ -123,18 +123,40 @@ class Document(object):
 
 
     def add_new_line(self):
+        """Adds a new line to the Markdown document."""
+        
         self.md_text += pmg.gen_new_line()
 
 
+    
     def add_section(self):
+        """Create a new section in the Markdown document."""
+        
         self.md_text += pmg.gen_section()
 
 
+
     def add_italic(self, text, alternative=False):
+        """Add italic text to the document.
+        
+        Args:
+          text (string): Text to be set in italics.
+          alternative (bool, optional): Use the alternative style.
+          
+        """
+        
         self.md_text += pmg.gen_italic(text, alternative)
 
 
     def add_bold(self, text, alternative=False):
+        """Add bokd text to document.
+        
+        Args:
+          text (string): The text to type bolt.
+          alternative(bool, optional): Use alternative style.
+          
+        """
+        
         self.md_text += pmg.gen_bold(text, alternative)
 
 
