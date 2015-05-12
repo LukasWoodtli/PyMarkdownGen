@@ -243,7 +243,7 @@ class Document(object):
     def save_to_file(self, file_path=""):
         """Saves the Markdown text to the file with the
         given path.
-        
+
         Args:
           file_path(string): The path of the file where
             the Markdown text is written to.
@@ -252,8 +252,8 @@ class Document(object):
             an error ocurs.
 
         """
-        
+
         if not file_path:
             file_path = self.file_path
-            
+
         open(file_path, 'w').writelines(self.md_text)
