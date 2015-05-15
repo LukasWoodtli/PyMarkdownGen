@@ -62,18 +62,17 @@ class TestReadmeGen(unittest.TestCase):
 
         md_document.add_heading("Features", 2, True)
 
-        table_data = [  ["Feature", "Implemented", "Tested"],
-                        ["Headers",  "✓",          "✓"],
-                        ["Links",    "✓",          "✓"],
-                        ["References", "✓", "✓"],
-                        ["Images", "✓", "✓"],
-                        ["Tables", "✓", "✓"],
-                        ["Lists", "✓", "✓"],
-                        ["Nested Lists", "✗", "✗"],
-                        ["Blockquotes", "✓", "✓"],
-                        ["Emphasis", "✓", "✓"],
-                        ["Code and Syntax", "✗", "✗"]
-                     ]
+        table_data = [["Feature", "Implemented", "Tested"],
+                      ["Headers", "✓", "✓"],
+                      ["Links", "✓", "✓"],
+                      ["References", "✓", "✓"],
+                      ["Images", "✓", "✓"],
+                      ["Tables", "✓", "✓"],
+                      ["Lists", "✓", "✓"],
+                      ["Nested Lists", "✗", "✗"],
+                      ["Blockquotes", "✓", "✓"],
+                      ["Emphasis", "✓", "✓"],
+                      ["Code and Syntax", "✗", "✗"]]
 
         md_document.add_table(table_data, ["<", "^", "^"])
 
