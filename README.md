@@ -3,6 +3,8 @@ Markdown Generator for Python
 Status
 ------
 ![Travis CI Build Status](https://travis-ci.org/LukasWoodtli/PyMarkdownGen.svg?branch=master "Build Status")
+[![Coverage Status](https://coveralls.io/repos/LukasWoodtli/PyMarkdownGen/badge.svg?branch=master)](https://coveralls.io/r/LukasWoodtli/PyMarkdownGen?branch=master)
+
 
 Objective
 ---------
