@@ -54,6 +54,20 @@ Or:
 
         self.assertEqual(expected_output_text, md_doc.get_markdown_text())
 
+    def test_list_in_block_quote(self):
+        """Tests tidyness with list in block quote."""
+
+        expected_output_text = get_expected_markdown_text("Tidyness.text")
+
+        text = "A list within a blockquote:"
+        text += md.gen_section()
+        text += md.gen_un_ordered_list(["asterisk 1", "asterisk 2", "asterisk 3"])
+
+        md_doc = doc.Document()
+        md_doc.add_block_quote(text)
+
+
+        self.assertEqual(expected_output_text, md_doc.get_markdown_text())
 
 
 if __name__ == '__main__':
