@@ -47,7 +47,6 @@ class TestAmpsAndAngles(unittest.TestCase):
 
         md_document.add_text("Here's an inline ")
         md_document.add_link("</script?foo=1&bar=2>", "link")
-        md_document.add_section()
 
         self.assertEqual(self.expected_output_text, md_document.get_markdown_text(True))
 

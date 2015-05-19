@@ -122,6 +122,16 @@ class Document(object):
         self.references_list = references
 
 
+    def add_references_list(self):
+        """Adds the list of references to the document
+        and clears the list."""
+
+        for ref in self.references_list:
+            self.md_text += ref
+
+        self.references_list = []
+
+
     def add_new_line(self):
         """Adds a new line to the Markdown document."""
 
@@ -233,9 +243,8 @@ class Document(object):
         """
 
         if append_references:
-            self.md_text += "\n"
-            for ref in self.references_list:
-                self.md_text += ref
+            self.add_section()
+            self.add_references_list()
 
         return self.md_text
 

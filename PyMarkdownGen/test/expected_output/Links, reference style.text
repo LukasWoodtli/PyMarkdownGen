@@ -1,0 +1,24 @@
+Foo [bar][1]
+
+[1]: /url/  "Title"
+
+
+Indented [once][]
+
+Indented [twice][]
+
+Indented [thrice][]
+
+Indented [four][] times.
+
+ [once]: /url
+
+  [twice]: /url
+
+   [thrice]: /url
+
+    [four]: /url
+
+With [embedded [brackets]][b]
+
+[b]: /url/

@@ -184,6 +184,9 @@ def gen_reference(reference_id, reference_text, text="", references_list=None):
     """
     if text is "":
         md_str = " [{}]".format(reference_id)
+    elif reference_id is "":
+        reference_id = text
+        md_str = "[{}][]".format(reference_id)
     else:
         md_str = "[{}][{}]".format(text, reference_id)
     ref = "[{}]: {}\n".format(reference_id, reference_text)
