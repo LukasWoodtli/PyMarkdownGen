@@ -5,7 +5,6 @@ __author__ = 'Lukas Woodtli'
 
 import unittest
 from PyMarkdownGen.test.document_test_common import get_expected_markdown_text
-import PyMarkdownGen.PyMarkdownGen as md
 import PyMarkdownGen.Document as doc
 
 class LinkAndReferencesTest(unittest.TestCase):
@@ -31,6 +30,23 @@ class LinkAndReferencesTest(unittest.TestCase):
 
         md_doc.add_link("", "Empty")
         md_doc.add_section()
+
+        self.assertEqual(expected_output_text, md_doc.get_markdown_text())
+
+    def test_quotes_in_link_titles(self):
+        """Tests for quotes in link titles"""
+
+        expected_output_text = get_expected_markdown_text("Literal quotes in titles.text")
+
+        md_doc = doc.Document()
+        md_doc.add_text("Foo ")
+        md_doc.add_reference("", '/url/ "Title with "quotes" inside"', "bar")
+        md_doc.add_section()
+
+        md_doc.add_text("Foo ")
+        md_doc.add_link("/url/", "bar", 'Title with "quotes" inside')
+        md_doc.add_section()
+
 
         self.assertEqual(expected_output_text, md_doc.get_markdown_text())
 
