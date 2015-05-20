@@ -342,3 +342,16 @@ def gen_block_quote(text, simple=False):
         for line in text:
             md_str += "> " + line + "\n"
         return md_str
+
+
+def gen_html_comments(comment_text):
+    """Add a HTML comment block.
+
+    Args:
+      comment_text (string): The text in the comment.
+
+    Returns: The HTML comment with the given text.
+
+    """
+
+    return "<!-- " + comment_text + " -->"

@@ -232,6 +232,20 @@ class Document(object):
         self.md_text += pmg.gen_block_quote(text, simple)
 
 
+    def add_html_comments(self, comment_text):
+        """Adds a text as HTML comment to the document.
+
+        Args:
+          comment_text (string): The text to put in the
+            c
+            HTML comment in the document.
+
+        """
+
+        self.md_text += pmg.gen_html_comments( comment_text)
+
+
+
     def get_markdown_text(self, append_references=False):
         """Get the complete text with Markdown foratting.
 
