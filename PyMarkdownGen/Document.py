@@ -242,7 +242,11 @@ class Document(object):
 
         """
 
+<<<<<<< HEAD
+        self.md_text += pmg.gen_html_comments(comment_text)
+=======
         self.md_text += pmg.gen_html_comments( comment_text)
+>>>>>>> branch 'master' of https://github.com/LukasWoodtli/MarkdownGen
 
 
 
