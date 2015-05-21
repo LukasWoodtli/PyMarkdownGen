@@ -1,0 +1,34 @@
+## Unordered
+
+Asterisks tight:
+
+* asterisk 1
+* asterisk 2
+* asterisk 3
+
+
+* * *
+
+Pluses tight:
+
++ Plus 1
++ Plus 2
++ Plus 3
+
+
+Minuses tight:
+
+- Minus 1
+- Minus 2
+- Minus 3
+
+
+## Ordered
+
+Tight:
+
+1. One
+2. Two
+3. Three
+
+
