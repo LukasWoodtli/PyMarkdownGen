@@ -16,7 +16,7 @@ class DocumentTest(unittest.TestCase):
     def test_document_generation(self):
         """Tests a simple case of the document based API."""
 
-        doc = md.Document("test_doc.md")
+        doc = md.Document()
         doc.add_heading("Test", 1, True)
 
         self.assertEqual("Test\n====\n", doc.get_markdown_text())

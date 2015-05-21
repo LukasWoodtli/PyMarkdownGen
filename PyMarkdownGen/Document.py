@@ -13,7 +13,7 @@ class Document(object):
     """
 
 
-    def __init__(self, file_path=""):
+    def __init__(self):
         """The constructor generates a Markdown
         document.
 
@@ -23,7 +23,6 @@ class Document(object):
 
         """
 
-        self.file_path = file_path
         self.md_text = ""
         self.references_list = []
 
@@ -263,7 +262,7 @@ class Document(object):
         return self.md_text
 
 
-    def save_to_file(self, file_path=""):
+    def save_to_file(self, file_path):
         """Saves the Markdown text to the file with the
         given path.
 
@@ -275,8 +274,5 @@ class Document(object):
             an error ocurs.
 
         """
-
-        if not file_path:
-            file_path = self.file_path
 
         open(file_path, 'w').writelines(self.md_text)

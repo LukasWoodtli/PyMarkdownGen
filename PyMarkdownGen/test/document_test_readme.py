@@ -12,6 +12,11 @@ __author__ = 'Lukas Woodtli'
 import unittest
 from PyMarkdownGen.test.document_test_common import get_expected_markdown_text
 import PyMarkdownGen.Document as md_doc
+from os.path import dirname, realpath, join, isfile
+from os import remove
+import filecmp
+
+ACTUAL_OUTPUT_FILE = join(join(dirname(realpath(__file__)), "actual_test_output.text"))
 
 class TestReadmeGen(unittest.TestCase):
     """Some tests for generating a readme file."""
@@ -20,6 +25,12 @@ class TestReadmeGen(unittest.TestCase):
         """Set up the file with the expected output."""
 
         self.expected_output_text = get_expected_markdown_text("expected_readme.text")
+
+    def  tearDown(self):
+        """Delete the generated file."""
+
+        if isfile(ACTUAL_OUTPUT_FILE):
+            remove(ACTUAL_OUTPUT_FILE) # pragma: no cover
 
 
     def test_readme_gen(self):
@@ -90,9 +101,16 @@ class TestReadmeGen(unittest.TestCase):
         md_document.add_heading("Further Notes", 2, True)
         md_document.add_text("...")
 
-
-
         self.assertEqual(self.expected_output_text, md_document.get_markdown_text(False))
+
+        # try to save to disc
+        md_document.save_to_file(ACTUAL_OUTPUT_FILE)
+
+        expected_output_file = dirname(realpath(__file__))
+        expected_output_file = join(expected_output_file, "expected_output")
+        expected_output_file = join(expected_output_file, "expected_readme.text")
+        self.assertTrue(filecmp.cmp(ACTUAL_OUTPUT_FILE, expected_output_file))
+
 
 if __name__ == '__main__':
     unittest.main()   # pragma: no cover
