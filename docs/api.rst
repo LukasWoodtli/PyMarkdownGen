@@ -8,7 +8,7 @@ of the library just return strings.
 The second part of the library introduces a `Document` class. It is based
 on the procedural API and adds some functionality. There are methods to add
 Markdown text to the `Document` class. When the document is fully generated
-the Markdown text can be saved to a file. Or it can be used 
+the Markdown text can be saved to a file. Or it can be used
 for further processing from Python.
 
 Procedural API
