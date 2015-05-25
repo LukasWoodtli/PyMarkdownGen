@@ -17,6 +17,9 @@ str += mdg.gen_heading("Status", 2, True)
 str += mdg.gen_image_link("https://travis-ci.org/LukasWoodtli/PyMarkdownGen.svg?branch=master", "Build Status", "Travis CI Build Status")
 str += "\n[![Coverage Status](https://coveralls.io/repos/LukasWoodtli/PyMarkdownGen/badge.svg?branch=master)](https://coveralls.io/r/LukasWoodtli/PyMarkdownGen?branch=master)\n"
 
+str += "[![Documentation Status](https://readthedocs.org/projects/pymarkdowngen/badge/?version=latest)](https://readthedocs.org/projects/pymarkdowngen/?badge=latest)"
+                
+
 str += mdg.gen_section()
 
 
