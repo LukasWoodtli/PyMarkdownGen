@@ -355,3 +355,4 @@ def gen_html_comments(comment_text):
     """
 
     return "<!-- " + comment_text + " -->"
+
