@@ -11,7 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-
+   api
 
 
 Indices and tables
@@ -21,9 +21,3 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-
-.. automodule:: PyMarkdownGen.PyMarkdownGen
-  :members:
-
-.. automodule:: PyMarkdownGen.Document
-  :members:
