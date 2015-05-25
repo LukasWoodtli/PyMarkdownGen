@@ -15,6 +15,8 @@ str += mdg.gen_heading("Markdown Generator for Python", 1, True)
 
 str += mdg.gen_heading("Status", 2, True)
 str += mdg.gen_image_link("https://travis-ci.org/LukasWoodtli/PyMarkdownGen.svg?branch=master", "Build Status", "Travis CI Build Status")
+str += "\n[![Coverage Status](https://coveralls.io/repos/LukasWoodtli/PyMarkdownGen/badge.svg?branch=master)](https://coveralls.io/r/LukasWoodtli/PyMarkdownGen?branch=master)\n"
+
 str += mdg.gen_section()
 
 
@@ -73,7 +75,6 @@ actual_date = dt.strftime(dt.now(), "%c")
 
 str += "Last generation: " + actual_date + "."
 
-assert False
 
 with open(OUTPUT_FILE, "w") as readme_file:
     readme_file.write(str)
