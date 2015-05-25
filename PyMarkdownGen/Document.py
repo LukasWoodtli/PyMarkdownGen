@@ -46,9 +46,10 @@ class Document(object):
             as column titles.
           aligning (list of chars): Sets the alignment for
             each column:
-              '<': left align
-              '>': right align
-              '^': center
+            '<': left align
+            '>': right align
+            '^': center
+
             Default is left align.
 
         """

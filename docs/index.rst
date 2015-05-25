@@ -13,6 +13,7 @@ Contents:
 
 
 
+
 Indices and tables
 ==================
 
@@ -21,5 +22,8 @@ Indices and tables
 * :ref:`search`
 
 
-.. automodule:: PyMarkdownGen
+.. automodule:: PyMarkdownGen.PyMarkdownGen
+  :members:
+
+.. automodule:: PyMarkdownGen.Document
   :members:

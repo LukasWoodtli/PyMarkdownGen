@@ -1,7 +1,9 @@
 from setuptools import setup
+exec(open('PyMarkdownGen/version.py').read())
+
 
 setup(name='PyMarkdownGen',
-      version='0.1',
+      version=__version__,
       description='Library to generate markdown formatted text',
       url='https://github.com/LukasWoodtli/PyMarkdownGen',
       author='Lukas Woodtli',
