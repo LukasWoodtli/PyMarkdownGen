@@ -11,7 +11,7 @@ install:
 
 script: 
  - python -m unittest discover . -p *test*.py
- - pylint PyMarkdownGen
+ - pylint -d wrong-import-position,wrong-import-order PyMarkdownGen
  - coverage run --branch -m unittest discover . -p *test*.py
  - coverage report -m
 
