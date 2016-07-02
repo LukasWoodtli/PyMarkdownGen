@@ -63,7 +63,7 @@ str += mdg.gen_section()
 
 str += mdg.gen_heading("To Do's", 2, True)
 
-todos = ["Docstrings", "Document based API (OOP)", "Documentation (ReadTheDocs)", "More unit tests"]
+todos = ["Documentation (ReadTheDocs)", "More unit tests"]
 
 str += mdg.gen_un_ordered_list(todos)
 str += mdg.gen_section()
